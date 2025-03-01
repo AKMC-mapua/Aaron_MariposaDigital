@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff View Shipping</title>
-    <link rel="stylesheet" href="StaffManageProducts.css">
+    <link rel="stylesheet" href="StaffManageOrder.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jua&family=Noto+Serif+Hentaigana:wght@200..900&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
                     <img src="C:\Aaron_MariposaDigital\RESOURCES\RESOURCES\imgFiles\Logo.png" class="Logo" alt="Logo">
                 </a>
                 <a href="home.html" class="nav-link">Home</a>
-                <a href="StaffManageLots.html" class="nav-link">View Products</a>
+                <a href="StaffAddLots.html" class="nav-link">View Products</a>
             </div>
         
             <div class="nav-right-sec">
@@ -27,41 +27,27 @@
         
         <!-- Green Bar Section -->
         <div class="green-bar">
-            <span>PRODUCTS Management</span>
+            <span>Manage Order</span>
             <span class="right"></span> <!-- Empty span for the right side -->
         </div>
 
         <section>
             <div class="box-container">
                 <div class="large-box">
-                    <div class="order-name">MANAGE PRODUCTS</div>
+                    <div class="order-name">Manage Order</div>
                     <div class="button-container">
                         <button class="rounded-button">Add Product</button>
                         <button class="rounded-button">Manage Order</button>
-                        <button class="rounded-button">Manage Order Payment</button>
+                        <button class="rounded-button">Back</button>
                     </div>
                 </div>
-                <div class="stacked-boxes">
-                    <div class="box">
-                        <div class="box-title">NUMBER OF PRODUCTS</div>
-                        <div class="info-box">Total: 100</div>
+                <div class="large-box">
+                    <div class="order-name">Manage Client Order</div>
+                    <div class="client-details">
+                        <label for="client-id">Client ID:</label>
+                        <input type="text" id="client-id" placeholder="Enter Client ID">
                     </div>
-                    <div class="box">
-                        <div class="box-title">PRODUCTS ADDED</div>
-                        <div class="info-box">Added: 20</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-title">NUMBER OF SALES</div>
-                        <div class="info-box">Product Sold: 50</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-title">PRODUCTS REMOVED</div>
-                        <div class="info-box">Removed: 5</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-title">NUMBER OF CANCELED ORDERS</div>
-                        <div class="info-box">Canceled Orders: 3</div>
-                    </div>
+                    <button class="rounded-button">View Pending Orders</button>
                 </div>
             </div>
         </section>

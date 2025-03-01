@@ -22,6 +22,7 @@ nav {
     background-color: transparent;
     display: flex;
     flex-direction: row;
+    align-items: center; /* Center items vertically */
 }
 
 /* Navigation Links */
@@ -33,35 +34,18 @@ nav {
     text-decoration: none;
 }
 
-/* Placeholder Name */
-.placeholder-name {
-    margin-right: 15px;
-    font-family: "Grenze", serif;
-    font-size: 1vw;
-    color: #660001;
-    text-decoration: none;
-}
-
 /* Left Section of Navigation */
 .nav-left-sec {
-    width: 50%;
-    height: 100%;
+    flex: 1; /* Allow this section to take available space */
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: start;
-    gap: 3%;
 }
 
 /* Right Section of Navigation */
 .nav-right-sec {
-    width: 50%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: end;
-    gap: 3%;
+    justify-content: flex-end; /* Aligns the Back link to the right */
 }
 
 /* Logo */
@@ -70,28 +54,6 @@ nav {
     width: 70%;
     max-width: 250px;
     height: auto;
-}
-
-/* Green Bar */
-.green-bar {
-    width: 100%;
-    height: 70px;
-    background-color: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    color: white;
-    font-family: "Grenze", serif;
-    font-size: 1.5vw; /* Slightly larger font size */
-}
-
-.green-bar span {
-    flex: 1;
-}
-
-.green-bar .right {
-    text-align: right;
 }
 
 /* Main Section */
@@ -109,7 +71,7 @@ section {
     width: 90%; /* Adjusted width to leave some margin on the sides */
     height: 80%; /* Adjusted height to leave some margin on top and bottom */
     gap: 40px; /* Increased gap between left and right boxes */
-    align-items: center; /* Center boxes vertically */
+    align-items: flex-start; /* Align boxes to the top */
     justify-content: center; /* Center boxes horizontally */
 }
 
@@ -117,7 +79,7 @@ section {
 .large-box {
     font-size: 1.5vw;
     width: 450px; /* Set width of the left box */
-    height: 600px; /* Set height of the left box */
+    height: auto; /* Set height to auto to accommodate content */
     background-color: red; /* Set background color to red */
     border-radius: 20px; /* Set rounded edges */
     display: flex;
@@ -131,16 +93,33 @@ section {
 /* Button Container */
 .button-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Align buttons in a row */
     gap: 10px; /* Space between buttons */
     margin-top: 20px; /* Space above buttons */
+}
+
+/* Lot Details */
+.lot-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between fields */
+    margin-top: 20px; /* Space above fields */
+    width: 100%; /* Full width */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Full width */
 }
 
 /* Rounded Buttons */
 .rounded-button {
     font-size: 1vw;
     padding: 10px 20px;
-    margin: 30px 0;
     border: none;
     border-radius: 20px; /* Rounded edges */
     background-color: white; /* Button background color */
@@ -150,47 +129,7 @@ section {
     transition: background-color 0.3s;
 }
 
-/* Adjusted Stacked Boxes */
-.stacked-boxes {
-    width: 40%; /* Adjusted width to fill remaining space */
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Increased space between stacked boxes */
-}
-
-/* Individual Boxes */
-.box {
-    height: 120px; /* Adjusted height for each box */
-    background-color: red; /* Set background color to red */
-    border-radius: 20px; /* Set rounded edges */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: "Grenze", serif;
-}
-
-/* Box Title */
-.box-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* Info Boxes */
-.info-box {
-    width: 90%;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-}
-
-/* Status */
-.status {
-    margin-top: auto;
-    font-size: 1.2em;
-    text-align: center;
+/* Hover Effect for Buttons */
+.rounded-button:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
 }
